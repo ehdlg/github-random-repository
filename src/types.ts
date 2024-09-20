@@ -123,7 +123,7 @@ export type ErrorResponse = {
 
 export type ProgrammingLanguageData = {
   readonly label: string;
-  readonly value: string;
+  readonly value: LanguageValue;
 };
 
-export type LanguageValue = (typeof PROGRAMMING_LANGUAGE_VALUES)[number];
+export type LanguageValue = (typeof PROGRAMMING_LANGUAGE_VALUES)[number] | null;
