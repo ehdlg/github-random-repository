@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Repository } from '../types';
 
-function useLocalStorage(url: string) {
+function useLocalStorage(url: string | null) {
   const [cachedRepos, setCachedRepos] = useState<Repository[] | null>(null);
   const [isCacheLoading, setIsCacheLoading] = useState<boolean>(true);
 
@@ -14,6 +14,8 @@ function useLocalStorage(url: string) {
   };
 
   useEffect(() => {
+    if (null == url) return;
+
     const initialRawValue: string | null = localStorage.getItem(url);
     const initialValue: Repository[] | null =
       null != initialRawValue ? JSON.parse(initialRawValue) : null;
