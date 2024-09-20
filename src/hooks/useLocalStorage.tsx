@@ -3,6 +3,7 @@ import { Repository } from '../types';
 
 function useLocalStorage(url: string) {
   const [cachedRepos, setCachedRepos] = useState<Repository[] | null>(null);
+  const [isCacheLoading, setIsCacheLoading] = useState<boolean>(true);
 
   const updateCache = (url: string, repositories: Repository[] | null) => {
     setCachedRepos(repositories);
@@ -18,9 +19,11 @@ function useLocalStorage(url: string) {
       null != initialRawValue ? JSON.parse(initialRawValue) : null;
 
     updateCache(url, initialValue);
+
+    setIsCacheLoading(false);
   }, [url]);
 
-  return { cachedRepos, updateCache };
+  return { cachedRepos, updateCache, isCacheLoading };
 }
 
 export default useLocalStorage;
