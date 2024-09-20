@@ -121,4 +121,9 @@ export type ErrorResponse = {
   message: string;
 };
 
+export type ProgrammingLanguageData = {
+  readonly label: string;
+  readonly value: string;
+};
+
 export type LanguageValue = (typeof PROGRAMMING_LANGUAGE_VALUES)[number];
