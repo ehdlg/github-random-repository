@@ -6,1227 +6,1227 @@ export const REPOSITORIES_PER_PAGE = 100;
 
 export const PROGRAMMING_LANGUAGE_DATA = [
   {
-    title: 'All Languages',
+    label: 'All Languages',
     value: '',
   },
   {
-    title: 'ABAP',
+    label: 'ABAP',
     value: 'ABAP',
   },
   {
-    title: 'ActionScript',
+    label: 'ActionScript',
     value: 'ActionScript',
   },
   {
-    title: 'Ada',
+    label: 'Ada',
     value: 'Ada',
   },
   {
-    title: 'Agda',
+    label: 'Agda',
     value: 'Agda',
   },
   {
-    title: 'AGS',
+    label: 'AGS',
     value: 'AGS',
   },
   {
-    title: 'Alloy',
+    label: 'Alloy',
     value: 'Alloy',
   },
   {
-    title: 'AMPL',
+    label: 'AMPL',
     value: 'AMPL',
   },
   {
-    title: 'ANTLR',
+    label: 'ANTLR',
     value: 'ANTLR',
   },
   {
-    title: 'ApacheConf',
+    label: 'ApacheConf',
     value: 'ApacheConf',
   },
   {
-    title: 'Apex',
+    label: 'Apex',
     value: 'Apex',
   },
   {
-    title: 'API',
+    label: 'API',
     value: 'API',
   },
   {
-    title: 'APL',
+    label: 'APL',
     value: 'APL',
   },
   {
-    title: 'AppleScript',
+    label: 'AppleScript',
     value: 'AppleScript',
   },
   {
-    title: 'Arc',
+    label: 'Arc',
     value: 'Arc',
   },
   {
-    title: 'Arduino',
+    label: 'Arduino',
     value: 'Arduino',
   },
   {
-    title: 'ASP',
+    label: 'ASP',
     value: 'ASP',
   },
   {
-    title: 'AspectJ',
+    label: 'AspectJ',
     value: 'AspectJ',
   },
   {
-    title: 'Assembly',
+    label: 'Assembly',
     value: 'Assembly',
   },
   {
-    title: 'ATS',
+    label: 'ATS',
     value: 'ATS',
   },
   {
-    title: 'Augeas',
+    label: 'Augeas',
     value: 'Augeas',
   },
   {
-    title: 'AutoHotkey',
+    label: 'AutoHotkey',
     value: 'AutoHotkey',
   },
   {
-    title: 'AutoIt',
+    label: 'AutoIt',
     value: 'AutoIt',
   },
   {
-    title: 'Awk',
+    label: 'Awk',
     value: 'Awk',
   },
   {
-    title: 'Batchfile',
+    label: 'Batchfile',
     value: 'Batchfile',
   },
   {
-    title: 'Befunge',
+    label: 'Befunge',
     value: 'Befunge',
   },
   {
-    title: 'Bison',
+    label: 'Bison',
     value: 'Bison',
   },
   {
-    title: 'BitBake',
+    label: 'BitBake',
     value: 'BitBake',
   },
   {
-    title: 'BlitzBasic',
+    label: 'BlitzBasic',
     value: 'BlitzBasic',
   },
   {
-    title: 'BlitzMax',
+    label: 'BlitzMax',
     value: 'BlitzMax',
   },
   {
-    title: 'Bluespec',
+    label: 'Bluespec',
     value: 'Bluespec',
   },
   {
-    title: 'Boo',
+    label: 'Boo',
     value: 'Boo',
   },
   {
-    title: 'Brainfuck',
+    label: 'Brainfuck',
     value: 'Brainfuck',
   },
   {
-    title: 'Brightscript',
+    label: 'Brightscript',
     value: 'Brightscript',
   },
   {
-    title: 'Bro',
+    label: 'Bro',
     value: 'Bro',
   },
   {
-    title: 'C',
+    label: 'C',
     value: 'C',
   },
   {
-    title: 'CSharp',
+    label: 'CSharp',
     value: 'CSharp',
   },
   {
-    title: 'C++',
+    label: 'C++',
     value: 'C++',
   },
   {
-    title: 'Cap',
+    label: 'Cap',
     value: 'Cap',
   },
   {
-    title: 'CartoCSS',
+    label: 'CartoCSS',
     value: 'CartoCSS',
   },
   {
-    title: 'Ceylon',
+    label: 'Ceylon',
     value: 'Ceylon',
   },
   {
-    title: 'Chapel',
+    label: 'Chapel',
     value: 'Chapel',
   },
   {
-    title: 'Charity',
+    label: 'Charity',
     value: 'Charity',
   },
   {
-    title: 'ChucK',
+    label: 'ChucK',
     value: 'ChucK',
   },
   {
-    title: 'Cirru',
+    label: 'Cirru',
     value: 'Cirru',
   },
   {
-    title: 'Clarion',
+    label: 'Clarion',
     value: 'Clarion',
   },
   {
-    title: 'Clean',
+    label: 'Clean',
     value: 'Clean',
   },
   {
-    title: 'Click',
+    label: 'Click',
     value: 'Click',
   },
   {
-    title: 'CLIPS',
+    label: 'CLIPS',
     value: 'CLIPS',
   },
   {
-    title: 'Clojure',
+    label: 'Clojure',
     value: 'Clojure',
   },
   {
-    title: 'CMake',
+    label: 'CMake',
     value: 'CMake',
   },
   {
-    title: 'COBOL',
+    label: 'COBOL',
     value: 'COBOL',
   },
   {
-    title: 'CoffeeScript',
+    label: 'CoffeeScript',
     value: 'CoffeeScript',
   },
   {
-    title: 'ColdFusion',
+    label: 'ColdFusion',
     value: 'ColdFusion',
   },
   {
-    title: 'Common',
+    label: 'Common',
     value: 'Common',
   },
   {
-    title: 'Component',
+    label: 'Component',
     value: 'Component',
   },
   {
-    title: 'Cool',
+    label: 'Cool',
     value: 'Cool',
   },
   {
-    title: 'Coq',
+    label: 'Coq',
     value: 'Coq',
   },
   {
-    title: 'Crystal',
+    label: 'Crystal',
     value: 'Crystal',
   },
   {
-    title: 'CSS',
+    label: 'CSS',
     value: 'CSS',
   },
   {
-    title: 'Cucumber',
+    label: 'Cucumber',
     value: 'Cucumber',
   },
   {
-    title: 'Cuda',
+    label: 'Cuda',
     value: 'Cuda',
   },
   {
-    title: 'Cycript',
+    label: 'Cycript',
     value: 'Cycript',
   },
   {
-    title: 'D',
+    label: 'D',
     value: 'D',
   },
   {
-    title: 'Darcs',
+    label: 'Darcs',
     value: 'Darcs',
   },
   {
-    title: 'Dart',
+    label: 'Dart',
     value: 'Dart',
   },
   {
-    title: 'Diff',
+    label: 'Diff',
     value: 'Diff',
   },
   {
-    title: 'DIGITAL',
+    label: 'DIGITAL',
     value: 'DIGITAL',
   },
   {
-    title: 'DM',
+    label: 'DM',
     value: 'DM',
   },
   {
-    title: 'Dogescript',
+    label: 'Dogescript',
     value: 'Dogescript',
   },
   {
-    title: 'DTrace',
+    label: 'DTrace',
     value: 'DTrace',
   },
   {
-    title: 'Dylan',
+    label: 'Dylan',
     value: 'Dylan',
   },
   {
-    title: 'E',
+    label: 'E',
     value: 'E',
   },
   {
-    title: 'Eagle',
+    label: 'Eagle',
     value: 'Eagle',
   },
   {
-    title: 'eC',
+    label: 'eC',
     value: 'eC',
   },
   {
-    title: 'ECL',
+    label: 'ECL',
     value: 'ECL',
   },
   {
-    title: 'Eiffel',
+    label: 'Eiffel',
     value: 'Eiffel',
   },
   {
-    title: 'Elixir',
+    label: 'Elixir',
     value: 'Elixir',
   },
   {
-    title: 'Elm',
+    label: 'Elm',
     value: 'Elm',
   },
   {
-    title: 'Emacs',
+    label: 'Emacs',
     value: 'Emacs',
   },
   {
-    title: 'EmberScript',
+    label: 'EmberScript',
     value: 'EmberScript',
   },
   {
-    title: 'Erlang',
+    label: 'Erlang',
     value: 'Erlang',
   },
   {
-    title: 'F#',
+    label: 'F#',
     value: 'F#',
   },
   {
-    title: 'Factor',
+    label: 'Factor',
     value: 'Factor',
   },
   {
-    title: 'Fancy',
+    label: 'Fancy',
     value: 'Fancy',
   },
   {
-    title: 'Fantom',
+    label: 'Fantom',
     value: 'Fantom',
   },
   {
-    title: 'FLUX',
+    label: 'FLUX',
     value: 'FLUX',
   },
   {
-    title: 'Forth',
+    label: 'Forth',
     value: 'Forth',
   },
   {
-    title: 'FORTRAN',
+    label: 'FORTRAN',
     value: 'FORTRAN',
   },
   {
-    title: 'FreeMarker',
+    label: 'FreeMarker',
     value: 'FreeMarker',
   },
   {
-    title: 'Frege',
+    label: 'Frege',
     value: 'Frege',
   },
   {
-    title: 'Game',
+    label: 'Game',
     value: 'Game',
   },
   {
-    title: 'GAMS',
+    label: 'GAMS',
     value: 'GAMS',
   },
   {
-    title: 'GAP',
+    label: 'GAP',
     value: 'GAP',
   },
   {
-    title: 'GDScript',
+    label: 'GDScript',
     value: 'GDScript',
   },
   {
-    title: 'Genshi',
+    label: 'Genshi',
     value: 'Genshi',
   },
   {
-    title: 'Gettext',
+    label: 'Gettext',
     value: 'Gettext',
   },
   {
-    title: 'GLSL',
+    label: 'GLSL',
     value: 'GLSL',
   },
   {
-    title: 'Glyph',
+    label: 'Glyph',
     value: 'Glyph',
   },
   {
-    title: 'Gnuplot',
+    label: 'Gnuplot',
     value: 'Gnuplot',
   },
   {
-    title: 'Go',
+    label: 'Go',
     value: 'Go',
   },
   {
-    title: 'Golo',
+    label: 'Golo',
     value: 'Golo',
   },
   {
-    title: 'Gosu',
+    label: 'Gosu',
     value: 'Gosu',
   },
   {
-    title: 'Grace',
+    label: 'Grace',
     value: 'Grace',
   },
   {
-    title: 'Grammatical',
+    label: 'Grammatical',
     value: 'Grammatical',
   },
   {
-    title: 'Groff',
+    label: 'Groff',
     value: 'Groff',
   },
   {
-    title: 'Groovy',
+    label: 'Groovy',
     value: 'Groovy',
   },
   {
-    title: 'Hack',
+    label: 'Hack',
     value: 'Hack',
   },
   {
-    title: 'Handlebars',
+    label: 'Handlebars',
     value: 'Handlebars',
   },
   {
-    title: 'Harbour',
+    label: 'Harbour',
     value: 'Harbour',
   },
   {
-    title: 'Haskell',
+    label: 'Haskell',
     value: 'Haskell',
   },
   {
-    title: 'Haxe',
+    label: 'Haxe',
     value: 'Haxe',
   },
   {
-    title: 'HCL',
+    label: 'HCL',
     value: 'HCL',
   },
   {
-    title: 'HLSL',
+    label: 'HLSL',
     value: 'HLSL',
   },
   {
-    title: 'HTML',
+    label: 'HTML',
     value: 'HTML',
   },
   {
-    title: 'Hy',
+    label: 'Hy',
     value: 'Hy',
   },
   {
-    title: 'HyPhy',
+    label: 'HyPhy',
     value: 'HyPhy',
   },
   {
-    title: 'IDL',
+    label: 'IDL',
     value: 'IDL',
   },
   {
-    title: 'Idris',
+    label: 'Idris',
     value: 'Idris',
   },
   {
-    title: 'IGOR',
+    label: 'IGOR',
     value: 'IGOR',
   },
   {
-    title: 'Inform',
+    label: 'Inform',
     value: 'Inform',
   },
   {
-    title: 'Inno',
+    label: 'Inno',
     value: 'Inno',
   },
   {
-    title: 'Io',
+    label: 'Io',
     value: 'Io',
   },
   {
-    title: 'Ioke',
+    label: 'Ioke',
     value: 'Ioke',
   },
   {
-    title: 'Isabelle',
+    label: 'Isabelle',
     value: 'Isabelle',
   },
   {
-    title: 'J',
+    label: 'J',
     value: 'J',
   },
   {
-    title: 'Jasmin',
+    label: 'Jasmin',
     value: 'Jasmin',
   },
   {
-    title: 'Java',
+    label: 'Java',
     value: 'Java',
   },
   {
-    title: 'JavaScript',
+    label: 'JavaScript',
     value: 'JavaScript',
   },
   {
-    title: 'JFlex',
+    label: 'JFlex',
     value: 'JFlex',
   },
   {
-    title: 'JSONiq',
+    label: 'JSONiq',
     value: 'JSONiq',
   },
   {
-    title: 'Julia',
+    label: 'Julia',
     value: 'Julia',
   },
   {
-    title: 'Jupyter',
+    label: 'Jupyter',
     value: 'Jupyter-notebook',
   },
   {
-    title: 'KiCad',
+    label: 'KiCad',
     value: 'KiCad',
   },
   {
-    title: 'Kit',
+    label: 'Kit',
     value: 'Kit',
   },
   {
-    title: 'Kotlin',
+    label: 'Kotlin',
     value: 'Kotlin',
   },
   {
-    title: 'KRL',
+    label: 'KRL',
     value: 'KRL',
   },
   {
-    title: 'LabVIEW',
+    label: 'LabVIEW',
     value: 'LabVIEW',
   },
   {
-    title: 'Lasso',
+    label: 'Lasso',
     value: 'Lasso',
   },
   {
-    title: 'Lean',
+    label: 'Lean',
     value: 'Lean',
   },
   {
-    title: 'Lex',
+    label: 'Lex',
     value: 'Lex',
   },
   {
-    title: 'LilyPond',
+    label: 'LilyPond',
     value: 'LilyPond',
   },
   {
-    title: 'Limbo',
+    label: 'Limbo',
     value: 'Limbo',
   },
   {
-    title: 'Liquid',
+    label: 'Liquid',
     value: 'Liquid',
   },
   {
-    title: 'LiveScript',
+    label: 'LiveScript',
     value: 'LiveScript',
   },
   {
-    title: 'LLVM',
+    label: 'LLVM',
     value: 'LLVM',
   },
   {
-    title: 'Logos',
+    label: 'Logos',
     value: 'Logos',
   },
   {
-    title: 'Logtalk',
+    label: 'Logtalk',
     value: 'Logtalk',
   },
   {
-    title: 'LOLCODE',
+    label: 'LOLCODE',
     value: 'LOLCODE',
   },
   {
-    title: 'LookML',
+    label: 'LookML',
     value: 'LookML',
   },
   {
-    title: 'LoomScript',
+    label: 'LoomScript',
     value: 'LoomScript',
   },
   {
-    title: 'LSL',
+    label: 'LSL',
     value: 'LSL',
   },
   {
-    title: 'Lua',
+    label: 'Lua',
     value: 'Lua',
   },
   {
-    title: 'M',
+    label: 'M',
     value: 'M',
   },
   {
-    title: 'M4',
+    label: 'M4',
     value: 'M4',
   },
   {
-    title: 'Makefile',
+    label: 'Makefile',
     value: 'Makefile',
   },
   {
-    title: 'Mako',
+    label: 'Mako',
     value: 'Mako',
   },
   {
-    title: 'Markdown',
+    label: 'Markdown',
     value: 'Markdown',
   },
   {
-    title: 'Mask',
+    label: 'Mask',
     value: 'Mask',
   },
   {
-    title: 'Mathematica',
+    label: 'Mathematica',
     value: 'Mathematica',
   },
   {
-    title: 'Matlab',
+    label: 'Matlab',
     value: 'Matlab',
   },
   {
-    title: 'Max',
+    label: 'Max',
     value: 'Max',
   },
   {
-    title: 'MAXScript',
+    label: 'MAXScript',
     value: 'MAXScript',
   },
   {
-    title: 'Mercury',
+    label: 'Mercury',
     value: 'Mercury',
   },
   {
-    title: 'Metal',
+    label: 'Metal',
     value: 'Metal',
   },
   {
-    title: 'MiniD',
+    label: 'MiniD',
     value: 'MiniD',
   },
   {
-    title: 'Mirah',
+    label: 'Mirah',
     value: 'Mirah',
   },
   {
-    title: 'MLIR',
+    label: 'MLIR',
     value: 'MLIR',
   },
   {
-    title: 'Modelica',
+    label: 'Modelica',
     value: 'Modelica',
   },
   {
-    title: 'Modula',
+    label: 'Modula',
     value: 'Modula',
   },
   {
-    title: 'Module',
+    label: 'Module',
     value: 'Module',
   },
   {
-    title: 'Monkey',
+    label: 'Monkey',
     value: 'Monkey',
   },
   {
-    title: 'Moocode',
+    label: 'Moocode',
     value: 'Moocode',
   },
   {
-    title: 'MoonScript',
+    label: 'MoonScript',
     value: 'MoonScript',
   },
   {
-    title: 'MTML',
+    label: 'MTML',
     value: 'MTML',
   },
   {
-    title: 'mupad',
+    label: 'mupad',
     value: 'mupad',
   },
   {
-    title: 'Myghty',
+    label: 'Myghty',
     value: 'Myghty',
   },
   {
-    title: 'NCL',
+    label: 'NCL',
     value: 'NCL',
   },
   {
-    title: 'Nemerle',
+    label: 'Nemerle',
     value: 'Nemerle',
   },
   {
-    title: 'nesC',
+    label: 'nesC',
     value: 'nesC',
   },
   {
-    title: 'NetLinx',
+    label: 'NetLinx',
     value: 'NetLinx',
   },
   {
-    title: 'NetLinx',
+    label: 'NetLinx',
     value: 'NetLinx',
   },
   {
-    title: 'NetLogo',
+    label: 'NetLogo',
     value: 'NetLogo',
   },
   {
-    title: 'NewLisp',
+    label: 'NewLisp',
     value: 'NewLisp',
   },
   {
-    title: 'Nginx',
+    label: 'Nginx',
     value: 'Nginx',
   },
   {
-    title: 'Nim',
+    label: 'Nim',
     value: 'Nim',
   },
   {
-    title: 'Nit',
+    label: 'Nit',
     value: 'Nit',
   },
   {
-    title: 'Nix',
+    label: 'Nix',
     value: 'Nix',
   },
   {
-    title: 'NSIS',
+    label: 'NSIS',
     value: 'NSIS',
   },
   {
-    title: 'Nu',
+    label: 'Nu',
     value: 'Nu',
   },
   {
-    title: 'Objective-C',
+    label: 'Objective-C',
     value: 'Objective-C',
   },
   {
-    title: 'OCaml',
+    label: 'OCaml',
     value: 'OCaml',
   },
   {
-    title: 'Omgrofl',
+    label: 'Omgrofl',
     value: 'Omgrofl',
   },
   {
-    title: 'ooc',
+    label: 'ooc',
     value: 'ooc',
   },
   {
-    title: 'Opa',
+    label: 'Opa',
     value: 'Opa',
   },
   {
-    title: 'Opal',
+    label: 'Opal',
     value: 'Opal',
   },
   {
-    title: 'OpenEdge',
+    label: 'OpenEdge',
     value: 'OpenEdge',
   },
   {
-    title: 'OpenSCAD',
+    label: 'OpenSCAD',
     value: 'OpenSCAD',
   },
   {
-    title: 'Ox',
+    label: 'Ox',
     value: 'Ox',
   },
   {
-    title: 'Oxygene',
+    label: 'Oxygene',
     value: 'Oxygene',
   },
   {
-    title: 'Oz',
+    label: 'Oz',
     value: 'Oz',
   },
   {
-    title: 'Pan',
+    label: 'Pan',
     value: 'Pan',
   },
   {
-    title: 'Papyrus',
+    label: 'Papyrus',
     value: 'Papyrus',
   },
   {
-    title: 'Parrot',
+    label: 'Parrot',
     value: 'Parrot',
   },
   {
-    title: 'Pascal',
+    label: 'Pascal',
     value: 'Pascal',
   },
   {
-    title: 'PAWN',
+    label: 'PAWN',
     value: 'PAWN',
   },
   {
-    title: 'Perl',
+    label: 'Perl',
     value: 'Perl',
   },
   {
-    title: 'Perl6',
+    label: 'Perl6',
     value: 'Perl6',
   },
   {
-    title: 'PHP',
+    label: 'PHP',
     value: 'PHP',
   },
   {
-    title: 'PicoLisp',
+    label: 'PicoLisp',
     value: 'PicoLisp',
   },
   {
-    title: 'PigLatin',
+    label: 'PigLatin',
     value: 'PigLatin',
   },
   {
-    title: 'Pike',
+    label: 'Pike',
     value: 'Pike',
   },
   {
-    title: 'PLpgSQL',
+    label: 'PLpgSQL',
     value: 'PLpgSQL',
   },
   {
-    title: 'PLSQL',
+    label: 'PLSQL',
     value: 'PLSQL',
   },
   {
-    title: 'PogoScript',
+    label: 'PogoScript',
     value: 'PogoScript',
   },
   {
-    title: 'Pony',
+    label: 'Pony',
     value: 'Pony',
   },
   {
-    title: 'PostScript',
+    label: 'PostScript',
     value: 'PostScript',
   },
   {
-    title: 'POV',
+    label: 'POV',
     value: 'POV',
   },
   {
-    title: 'PowerShell',
+    label: 'PowerShell',
     value: 'PowerShell',
   },
   {
-    title: 'Processing',
+    label: 'Processing',
     value: 'Processing',
   },
   {
-    title: 'Prolog',
+    label: 'Prolog',
     value: 'Prolog',
   },
   {
-    title: 'Propeller',
+    label: 'Propeller',
     value: 'Propeller',
   },
   {
-    title: 'Protocol',
+    label: 'Protocol',
     value: 'Protocol',
   },
   {
-    title: 'Puppet',
+    label: 'Puppet',
     value: 'Puppet',
   },
   {
-    title: 'Pure',
+    label: 'Pure',
     value: 'Pure',
   },
   {
-    title: 'PureBasic',
+    label: 'PureBasic',
     value: 'PureBasic',
   },
   {
-    title: 'PureScript',
+    label: 'PureScript',
     value: 'PureScript',
   },
   {
-    title: 'Python',
+    label: 'Python',
     value: 'Python',
   },
   {
-    title: 'QMake',
+    label: 'QMake',
     value: 'QMake',
   },
   {
-    title: 'QML',
+    label: 'QML',
     value: 'QML',
   },
   {
-    title: 'R',
+    label: 'R',
     value: 'R',
   },
   {
-    title: 'Racket',
+    label: 'Racket',
     value: 'Racket',
   },
   {
-    title: 'Ragel',
+    label: 'Ragel',
     value: 'Ragel',
   },
   {
-    title: 'RAML',
+    label: 'RAML',
     value: 'RAML',
   },
   {
-    title: 'RDoc',
+    label: 'RDoc',
     value: 'RDoc',
   },
   {
-    title: 'REALbasic',
+    label: 'REALbasic',
     value: 'REALbasic',
   },
   {
-    title: 'Rebol',
+    label: 'Rebol',
     value: 'Rebol',
   },
   {
-    title: 'Red',
+    label: 'Red',
     value: 'Red',
   },
   {
-    title: 'Redcode',
+    label: 'Redcode',
     value: 'Redcode',
   },
   {
-    title: 'Ren',
+    label: 'Ren',
     value: 'Ren',
   },
   {
-    title: 'RenderScript',
+    label: 'RenderScript',
     value: 'RenderScript',
   },
   {
-    title: 'RobotFramework',
+    label: 'RobotFramework',
     value: 'RobotFramework',
   },
   {
-    title: 'Rouge',
+    label: 'Rouge',
     value: 'Rouge',
   },
   {
-    title: 'Ruby',
+    label: 'Ruby',
     value: 'Ruby',
   },
   {
-    title: 'Rust',
+    label: 'Rust',
     value: 'Rust',
   },
   {
-    title: 'SaltStack',
+    label: 'SaltStack',
     value: 'SaltStack',
   },
   {
-    title: 'SAS',
+    label: 'SAS',
     value: 'SAS',
   },
   {
-    title: 'Scala',
+    label: 'Scala',
     value: 'Scala',
   },
   {
-    title: 'Scheme',
+    label: 'Scheme',
     value: 'Scheme',
   },
   {
-    title: 'Scilab',
+    label: 'Scilab',
     value: 'Scilab',
   },
   {
-    title: 'Self',
+    label: 'Self',
     value: 'Self',
   },
   {
-    title: 'Shell',
+    label: 'Shell',
     value: 'Shell',
   },
   {
-    title: 'ShellSession',
+    label: 'ShellSession',
     value: 'ShellSession',
   },
   {
-    title: 'Shen',
+    label: 'Shen',
     value: 'Shen',
   },
   {
-    title: 'Slash',
+    label: 'Slash',
     value: 'Slash',
   },
   {
-    title: 'Smali',
+    label: 'Smali',
     value: 'Smali',
   },
   {
-    title: 'Smalltalk',
+    label: 'Smalltalk',
     value: 'Smalltalk',
   },
   {
-    title: 'Smarty',
+    label: 'Smarty',
     value: 'Smarty',
   },
   {
-    title: 'SMT',
+    label: 'SMT',
     value: 'SMT',
   },
   {
-    title: 'SourcePawn',
+    label: 'SourcePawn',
     value: 'SourcePawn',
   },
   {
-    title: 'SQF',
+    label: 'SQF',
     value: 'SQF',
   },
   {
-    title: 'SQL',
+    label: 'SQL',
     value: 'SQL',
   },
   {
-    title: 'SQLPL',
+    label: 'SQLPL',
     value: 'SQLPL',
   },
   {
-    title: 'Squirrel',
+    label: 'Squirrel',
     value: 'Squirrel',
   },
   {
-    title: 'Stan',
+    label: 'Stan',
     value: 'Stan',
   },
   {
-    title: 'Standard',
+    label: 'Standard',
     value: 'Standard',
   },
   {
-    title: 'Stata',
+    label: 'Stata',
     value: 'Stata',
   },
   {
-    title: 'SuperCollider',
+    label: 'SuperCollider',
     value: 'SuperCollider',
   },
   {
-    title: 'Solidity',
+    label: 'Solidity',
     value: 'Solidity',
   },
   {
-    title: 'Swift',
+    label: 'Swift',
     value: 'Swift',
   },
   {
-    title: 'SystemVerilog',
+    label: 'SystemVerilog',
     value: 'SystemVerilog',
   },
   {
-    title: 'Tcl',
+    label: 'Tcl',
     value: 'Tcl',
   },
   {
-    title: 'Tea',
+    label: 'Tea',
     value: 'Tea',
   },
   {
-    title: 'TeX',
+    label: 'TeX',
     value: 'TeX',
   },
   {
-    title: 'Thrift',
+    label: 'Thrift',
     value: 'Thrift',
   },
   {
-    title: 'Turing',
+    label: 'Turing',
     value: 'Turing',
   },
   {
-    title: 'TXL',
+    label: 'TXL',
     value: 'TXL',
   },
   {
-    title: 'TypeScript',
+    label: 'TypeScript',
     value: 'TypeScript',
   },
   {
-    title: 'Uno',
+    label: 'Uno',
     value: 'Uno',
   },
   {
-    title: 'UnrealScript',
+    label: 'UnrealScript',
     value: 'UnrealScript',
   },
   {
-    title: 'UrWeb',
+    label: 'UrWeb',
     value: 'UrWeb',
   },
   {
-    title: 'Vala',
+    label: 'Vala',
     value: 'Vala',
   },
   {
-    title: 'VCL',
+    label: 'VCL',
     value: 'VCL',
   },
   {
-    title: 'Verilog',
+    label: 'Verilog',
     value: 'Verilog',
   },
   {
-    title: 'VHDL',
+    label: 'VHDL',
     value: 'VHDL',
   },
   {
-    title: 'VimL',
+    label: 'VimL',
     value: 'VimL',
   },
   {
-    title: 'Visual',
+    label: 'Visual',
     value: 'Visual',
   },
   {
-    title: 'Volt',
+    label: 'Volt',
     value: 'Volt',
   },
   {
-    title: 'Vue',
+    label: 'Vue',
     value: 'Vue',
   },
   {
-    title: 'Web',
+    label: 'Web',
     value: 'Web',
   },
   {
-    title: 'WebIDL',
+    label: 'WebIDL',
     value: 'WebIDL',
   },
   {
-    title: 'wisp',
+    label: 'wisp',
     value: 'wisp',
   },
   {
-    title: 'X10',
+    label: 'X10',
     value: 'X10',
   },
   {
-    title: 'xBase',
+    label: 'xBase',
     value: 'xBase',
   },
   {
-    title: 'XC',
+    label: 'XC',
     value: 'XC',
   },
   {
-    title: 'XML',
+    label: 'XML',
     value: 'XML',
   },
   {
-    title: 'Xojo',
+    label: 'Xojo',
     value: 'Xojo',
   },
   {
-    title: 'XPages',
+    label: 'XPages',
     value: 'XPages',
   },
   {
-    title: 'XProc',
+    label: 'XProc',
     value: 'XProc',
   },
   {
-    title: 'XQuery',
+    label: 'XQuery',
     value: 'XQuery',
   },
   {
-    title: 'XS',
+    label: 'XS',
     value: 'XS',
   },
   {
-    title: 'XSLT',
+    label: 'XSLT',
     value: 'XSLT',
   },
   {
-    title: 'Xtend',
+    label: 'Xtend',
     value: 'Xtend',
   },
   {
-    title: 'Yacc',
+    label: 'Yacc',
     value: 'Yacc',
   },
   {
-    title: 'Zephir',
+    label: 'Zephir',
     value: 'Zephir',
   },
   {
-    title: 'Zimpl',
+    label: 'Zimpl',
     value: 'Zimpl',
   },
 ] as const;
