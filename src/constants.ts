@@ -2,6 +2,8 @@ export const API_URL = 'https://api.github.com/search';
 
 export const TOKEN = import.meta.env.VITE_TOKEN;
 
+export const REPOSITORIES_PER_PAGE = 100;
+
 export const PROGRAMMING_LANGUAGE_DATA = [
   {
     title: 'All Languages',

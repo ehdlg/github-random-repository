@@ -1,5 +1,5 @@
 import useSWR, { Fetcher } from 'swr';
-import { API_URL, TOKEN } from '../constants';
+import { API_URL, TOKEN, REPOSITORIES_PER_PAGE } from '../constants';
 import { ErrorResponse, LanguageValue, RepositorySearchResponse } from '../types';
 
 const fetcher: Fetcher<RepositorySearchResponse, string> = (URL: string) =>
@@ -8,7 +8,9 @@ const fetcher: Fetcher<RepositorySearchResponse, string> = (URL: string) =>
   }).then((res) => res.json());
 
 export function useRepository(language: LanguageValue) {
-  const URL = `${API_URL}/repositories?q=${language ? `language:${language}&` : ''}per_page=100`;
+  const URL = `${API_URL}/repositories?q=${
+    language ? `language:${language}&` : ''
+  }per_page=${REPOSITORIES_PER_PAGE}`;
   const { data, error, isLoading } = useSWR<RepositorySearchResponse, ErrorResponse>(URL, fetcher);
 
   return { data, error, isLoading };
