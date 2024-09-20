@@ -112,3 +112,9 @@ export type Owner = {
   events_url: string;
   site_admin: boolean;
 };
+
+export type ErrorResponse = {
+  documentation_url: string;
+  status: number;
+  message: string;
+};
