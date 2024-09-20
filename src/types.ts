@@ -1,3 +1,5 @@
+import { PROGRAMMING_LANGUAGE_VALUES } from './constants';
+
 export type RepositorySearchResponse = {
   total_count: number;
   incomplete_results: boolean;
@@ -118,3 +120,5 @@ export type ErrorResponse = {
   status: number;
   message: string;
 };
+
+export type LanguageValue = (typeof PROGRAMMING_LANGUAGE_VALUES)[number];
