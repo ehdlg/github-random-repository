@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { LOCAL_STORAGE_SIZE_LIMIT } from '../constants';
 import { Repository } from '../types';
 
@@ -6,7 +6,7 @@ function useLocalStorage(url: string | null) {
   const [cachedRepos, setCachedRepos] = useState<Repository[] | null>(null);
   const [isCacheLoading, setIsCacheLoading] = useState<boolean>(true);
 
-  const updateCache = (url: string, repositories: Repository[] | null) => {
+  const updateCache = useCallback((url: string, repositories: Repository[] | null) => {
     setCachedRepos(repositories);
 
     if (null == repositories) return;
@@ -16,7 +16,7 @@ function useLocalStorage(url: string | null) {
     if (localStorageSize >= LOCAL_STORAGE_SIZE_LIMIT) localStorage.clear();
 
     localStorage.setItem(url, JSON.stringify(repositories));
-  };
+  }, []);
 
   const getLocalStorageSize = () => {
     let totalSize = 0;
