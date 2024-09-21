@@ -50,7 +50,7 @@ function useLocalStorage(url: string | null) {
     updateCache(url, initialValue);
 
     setIsCacheLoading(false);
-  }, [url]);
+  }, [url, updateCache]);
 
   return { cachedRepos, updateCache, isCacheLoading };
 }
