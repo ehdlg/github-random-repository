@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { LOCAL_STORAGE_SIZE_LIMIT } from '../constants';
 import { Repository } from '../types';
 
 function useLocalStorage(url: string | null) {
@@ -12,7 +13,7 @@ function useLocalStorage(url: string | null) {
 
     const localStorageSize = getLocalStorageSize();
 
-    if (localStorageSize >= 3.0) localStorage.clear();
+    if (localStorageSize >= LOCAL_STORAGE_SIZE_LIMIT) localStorage.clear();
 
     localStorage.setItem(url, JSON.stringify(repositories));
   };

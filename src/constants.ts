@@ -4,6 +4,8 @@ export const TOKEN = import.meta.env.VITE_TOKEN;
 
 export const REPOSITORIES_PER_PAGE = 100;
 
+export const LOCAL_STORAGE_SIZE_LIMIT = 3.0;
+
 export const PROGRAMMING_LANGUAGE_DATA = [
   {
     label: 'All Languages',
