@@ -1,8 +1,6 @@
 import { Repository } from './types';
 
-export const getRandomRepo = (repositories: Repository[] | undefined) => {
-  if (null == repositories || repositories.length === 0) return null;
-
+export const getRandomRepo = (repositories: Repository[]) => {
   const repositoriesLength = repositories.length;
   const randomIndex = Math.floor(Math.random() * repositoriesLength);
 
