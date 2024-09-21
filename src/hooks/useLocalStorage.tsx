@@ -10,7 +10,33 @@ function useLocalStorage(url: string | null) {
 
     if (null == repositories) return;
 
+    const localStorageSize = getLocalStorageSize();
+
+    if (localStorageSize >= 3.0) localStorage.clear();
+
     localStorage.setItem(url, JSON.stringify(repositories));
+  };
+
+  const getLocalStorageSize = () => {
+    let totalSize = 0;
+
+    const localStorageKeys = Object.keys(localStorage);
+
+    if (localStorageKeys.length == 0) return totalSize;
+
+    for (const key of localStorageKeys) {
+      const value = localStorage.getItem(key);
+
+      if (null == value) continue;
+
+      const keySize = key.length + value.length;
+
+      totalSize += keySize;
+    }
+
+    const sizeInMb = totalSize / 1024 / 1023;
+
+    return Number(sizeInMb.toFixed(2));
   };
 
   useEffect(() => {
