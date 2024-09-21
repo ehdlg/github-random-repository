@@ -1,4 +1,4 @@
-import { Repository } from './types';
+import { Repository } from '../types';
 import { IoMdStar } from 'react-icons/io';
 import { RiGitForkFill } from 'react-icons/ri';
 import { PiWarningCircleLight } from 'react-icons/pi';

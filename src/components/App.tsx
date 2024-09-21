@@ -1,10 +1,10 @@
-import useRepository from './hooks/useRepository';
-import Search from './components/Search';
+import useRepository from '../hooks/useRepository';
+import Search from './Search';
 import Loading from './Loading';
 import { useCallback, useEffect, useState } from 'react';
-import { LanguageValue, ProgrammingLanguageData, Repository } from './types';
+import { LanguageValue, ProgrammingLanguageData, Repository } from '../types';
 import { SingleValue } from 'react-select';
-import { getRandomRepo } from './utils';
+import { getRandomRepo } from '../utils';
 import RepoInfo from './RepoInfo';
 
 function App() {

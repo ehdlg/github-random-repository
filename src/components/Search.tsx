@@ -1,6 +1,6 @@
 import { PROGRAMMING_LANGUAGE_DATA } from '../constants';
 import Select, { SingleValue } from 'react-select';
-import { LanguageValue, ProgrammingLanguageData } from '../types';
+import { ProgrammingLanguageData } from '../types';
 
 export default function Search({
   onChange,
