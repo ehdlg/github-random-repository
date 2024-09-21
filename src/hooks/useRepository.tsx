@@ -13,7 +13,7 @@ export function useRepository(language: LanguageValue) {
     language ? `language:${language}&` : ''
   }per_page=${REPOSITORIES_PER_PAGE}`;
   const { cachedRepos, updateCache, isCacheLoading } = useCache(URL);
-  const fetcherURL = null != URL && null == cachedRepos && !isCacheLoading ? URL : null;
+  const fetcherURL = null != language && null == cachedRepos && !isCacheLoading ? URL : null;
   const { data, error, isLoading } = useSWR<RepositorySearchResponse, ErrorResponse>(
     fetcherURL,
     fetcher
