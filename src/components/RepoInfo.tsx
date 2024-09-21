@@ -13,7 +13,7 @@ export default function RepoInfo({
   const { description, language, watchers_count, forks_count, open_issues_count, name, html_url } =
     repo;
   const iconStyles = 'text-violet-500 size-5';
-  const spanStyles = 'flex gap-2 items-center';
+  const detailsStyles = 'flex gap-1 justify-center text-center  items-center';
 
   return (
     <>
@@ -26,18 +26,18 @@ export default function RepoInfo({
         <p className='dark:text-slate-400 text-slate-700 text-2xl mb-auto'>
           {description ?? 'No description provided '}
         </p>
-        <div className='text-left flex w-full text-lg justify-between  text-slate-300 items-center'>
-          <span className={spanStyles}>
+        <div className='text-left grid grid-cols-4 gap-2 content-center w-full text-md justify-between  text-slate-300 items-center'>
+          <span className={detailsStyles}>
             <div className={`size-3 rounded-full bg-violet-500 language-${language}`}></div>{' '}
             {language}
           </span>
-          <span className={spanStyles}>
+          <span className={detailsStyles}>
             <IoMdStar className={iconStyles} /> {watchers_count}
           </span>
-          <span className={spanStyles}>
+          <span className={detailsStyles}>
             <RiGitForkFill className={iconStyles} /> {forks_count}
           </span>
-          <span className={spanStyles}>
+          <span className={detailsStyles}>
             <PiWarningCircleLight className={iconStyles} /> {open_issues_count}
           </span>
         </div>
