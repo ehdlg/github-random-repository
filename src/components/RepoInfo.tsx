@@ -45,7 +45,7 @@ export default function RepoInfo({
 
       <button
         onClick={refreshRepo}
-        className='w-full dark:bg-slate-800 bg-slate-100 px-2 py-4 border-2 border-transparent hover:border-violet-500 rounded-xl text-xl drop-shadow-md hover:drop-shadow-none transition ease-in duration-300 dark:text-slate-200 text-slate-700'
+        className='w-full focus:outline-none dark:bg-slate-800 bg-slate-100 px-2 py-4 border-2 border-transparent focus:border-violet-500 hover:border-violet-500 rounded-xl text-xl drop-shadow-md hover:drop-shadow-none transition ease-in duration-300 dark:text-slate-200 text-slate-700'
       >
         Refresh
       </button>
