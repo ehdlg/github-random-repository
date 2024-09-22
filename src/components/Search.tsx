@@ -22,7 +22,7 @@ export default function Search({
           option: (state) =>
             `p-2 rounded-md transition-all duration-150 text-lg hover:cursor-pointer ${
               state.isSelected ? 'bg-violet-500 text-white' : 'hover:bg-violet-300 hover:text-white'
-            }`,
+            } ${state.isFocused && !state.isSelected && 'bg-violet-300'}`,
           input: () => 'text-lg text-slate-700 dark:text-slate-200',
           indicatorsContainer: () => 'flex bg-slate-100 dark:bg-slate-800',
           indicatorSeparator: () => 'hidden',
