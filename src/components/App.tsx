@@ -11,7 +11,6 @@ function App() {
   const [selectedLanguage, setSelectedLanguage] = useState<LanguageValue | null>(null);
   const [randomRepo, setRandomRepo] = useState<Repository | null>(null);
   const { data, error, isLoading } = useRepository(selectedLanguage);
-  console.log(randomRepo);
 
   const updateRandomRepo = useCallback(() => {
     if (null == data) return;
@@ -36,8 +35,6 @@ function App() {
 
     updateRandomRepo();
   }, [selectedLanguage, data, updateRandomRepo]);
-
-  console.log(data);
 
   if (error) return null;
 
