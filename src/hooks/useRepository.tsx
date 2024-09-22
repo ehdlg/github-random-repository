@@ -12,14 +12,14 @@ export function useRepository(language: LanguageValue) {
   const URL = `${API_URL}/repositories?q=${
     language ? `language:${language}&` : ''
   }per_page=${REPOSITORIES_PER_PAGE}`;
-  const { cachedRepos, updateCache, isCacheLoading } = useCache(URL);
+  const { cachedRepos, updateCache, isCacheLoading } = useCache(language);
   const fetcherURL = null != language && null == cachedRepos && !isCacheLoading ? URL : null;
   const { data, error, isLoading } = useSWR<RepositorySearchResponse, ErrorResponse>(
     fetcherURL,
     fetcher
   );
 
-  if (null != data) updateCache(URL, data.items);
+  if (null != language && null != data) updateCache(language, data.items);
 
   return { data: cachedRepos || data?.items, error, isLoading: isCacheLoading || isLoading };
 }

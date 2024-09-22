@@ -1,7 +1,8 @@
+import { LanguageValue } from '../types';
 import useLocalStorage from './useLocalStorage';
 
-function useCache(url: string) {
-  const { cachedRepos, updateCache, isCacheLoading } = useLocalStorage(url);
+function useCache(language: LanguageValue) {
+  const { cachedRepos, updateCache, isCacheLoading } = useLocalStorage(language);
 
   return { cachedRepos, updateCache, isCacheLoading };
 }
