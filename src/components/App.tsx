@@ -47,8 +47,9 @@ function App() {
         Random Repo
       </h2>
       <h3 className='dark:text-slate-300 text-2xl text-center leading-normal mt-8'>
-        Explore a variety of <span className='font-bold '>GitHub repositories</span> in your
-        favorite programming language. Discover new projects and inspiration with each click!
+        Explore a variety of{' '}
+        <span className='font-bold dark:text-slate-300 text-slate-600'>GitHub repositories</span> in
+        your favorite programming language. Discover new projects and inspiration with each click!
       </h3>
 
       {isLoading && <Loading />}
