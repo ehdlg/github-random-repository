@@ -10,8 +10,15 @@ export default function RepoInfo({
   repo: FullRepository;
   refreshRepo: () => void;
 }) {
-  const { description, language, watchers_count, forks_count, open_issues_count, name, html_url } =
-    repo;
+  const {
+    description,
+    language,
+    stargazers_count,
+    forks_count,
+    open_issues_count,
+    name,
+    html_url,
+  } = repo;
   const iconStyles = 'text-violet-500 size-5';
   const detailsStyles = 'flex gap-1 justify-center text-center  items-center';
 
@@ -32,7 +39,7 @@ export default function RepoInfo({
             {language}
           </span>
           <span className={detailsStyles}>
-            <IoMdStar className={iconStyles} /> {watchers_count}
+            <IoMdStar className={iconStyles} /> {stargazers_count}
           </span>
           <span className={detailsStyles}>
             <RiGitForkFill className={iconStyles} /> {forks_count}
