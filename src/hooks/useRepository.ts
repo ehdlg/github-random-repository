@@ -1,13 +1,23 @@
-import useSWR, { Fetcher } from 'swr';
+import useSWR from 'swr';
 import { API_URL, TOKEN, REPOSITORIES_PER_PAGE } from '../constants';
 import { ErrorResponse, LanguageValue, Repository, RepositorySearchResponse } from '../types';
 import useCache from './useCache';
 import { extractRequiredFields } from '../utils';
+import { FetchError } from '../errors';
 
-const fetcher: Fetcher<RepositorySearchResponse, string> = (URL: string) =>
-  fetch(URL, {
+const fetcher = async (url: string) => {
+  const res = await fetch(url, {
     headers: { 'Content-Type': 'application/vnd.github+json', Authorization: `Bearer ${TOKEN}` },
-  }).then((res) => res.json());
+  });
+
+  if (!res.ok) {
+    const error: ErrorResponse = await res.json();
+
+    throw new FetchError(error.message, error.documentation_url, error.status);
+  }
+
+  return res.json();
+};
 
 export function useRepository(language: LanguageValue) {
   let filteredRepos: Repository[] | null = null;
@@ -16,7 +26,7 @@ export function useRepository(language: LanguageValue) {
   }per_page=${REPOSITORIES_PER_PAGE}`;
   const { cachedRepos, updateCache, isCacheLoading } = useCache(language);
   const fetcherURL = null != language && null == cachedRepos && !isCacheLoading ? URL : null;
-  const { data, error, isLoading } = useSWR<RepositorySearchResponse, ErrorResponse>(
+  const { data, error, isLoading } = useSWR<RepositorySearchResponse, FetchError>(
     fetcherURL,
     fetcher
   );
