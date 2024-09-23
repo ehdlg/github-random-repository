@@ -9,12 +9,20 @@ export const handleError: ErrorRequestHandler = (error, req, res, next) => {
   const message = error.message ?? 'Something went wrong';
   const status = error.status ?? 500;
 
-  return res.status(status).json(message);
+  return res.status(status).json({ error: message });
 };
 
-export const validateRepositoriesInput = (repos: string) => {
+export const validateRepositoriesInput: RequestHandler = (req, res, next) => {
+  const { repositories } = req.body;
+
+  if (null == repositories) throw new CustomError('No repositories were sent', 400);
+
   try {
-    return JSON.parse(repos);
+    const parsedRepos = JSON.parse(repositories);
+
+    if (Array.isArray(parsedRepos)) return next();
+
+    throw new CustomError('Invalid repositories', 400);
   } catch {
     const error = new CustomError('Invalid repositories', 404);
     throw error;
