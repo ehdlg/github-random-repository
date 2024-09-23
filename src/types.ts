@@ -85,6 +85,18 @@ export type FullRepository = {
   license: License;
 };
 
+export type Repository = Pick<
+  FullRepository,
+  | 'description'
+  | 'stargazers_count'
+  | 'language'
+  | 'forks_count'
+  | 'html_url'
+  | 'name'
+  | 'id'
+  | 'open_issues_count'
+>;
+
 export type License = {
   key: string;
   name: string;
