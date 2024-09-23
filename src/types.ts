@@ -3,10 +3,10 @@ import { PROGRAMMING_LANGUAGE_VALUES } from './constants';
 export type RepositorySearchResponse = {
   total_count: number;
   incomplete_results: boolean;
-  items: Repository[];
+  items: FullRepository[];
 };
 
-export type Repository = {
+export type FullRepository = {
   id: number;
   node_id: string;
   name: string;

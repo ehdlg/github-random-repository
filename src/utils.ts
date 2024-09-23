@@ -1,6 +1,6 @@
-import { Repository } from './types';
+import { FullRepository } from './types';
 
-export const getRandomRepo = (repositories: Repository[]) => {
+export const getRandomRepo = (repositories: FullRepository[]) => {
   const repositoriesLength = repositories.length;
   const randomIndex = Math.floor(Math.random() * repositoriesLength);
 

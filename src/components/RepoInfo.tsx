@@ -1,4 +1,4 @@
-import { Repository } from '../types';
+import { FullRepository } from '../types';
 import { IoMdStar } from 'react-icons/io';
 import { RiGitForkFill } from 'react-icons/ri';
 import { PiWarningCircleLight } from 'react-icons/pi';
@@ -7,7 +7,7 @@ export default function RepoInfo({
   repo,
   refreshRepo,
 }: {
-  repo: Repository;
+  repo: FullRepository;
   refreshRepo: () => void;
 }) {
   const { description, language, watchers_count, forks_count, open_issues_count, name, html_url } =
