@@ -3,6 +3,7 @@ import Search from './Search';
 import Loading from './Loading';
 import { useCallback, useEffect, useState } from 'react';
 import { LanguageValue, ProgrammingLanguageData, Repository } from '../types';
+import { toast } from 'sonner';
 import { SingleValue } from 'react-select';
 import { getRandomRepo } from '../utils';
 import RepoInfo from './RepoInfo';
@@ -36,7 +37,11 @@ function App() {
     updateRandomRepo();
   }, [selectedLanguage, data, updateRandomRepo]);
 
-  if (error) return null;
+  if (null != error) {
+    toast.error(error.message);
+
+    setSelectedLanguage(null);
+  }
 
   return (
     <main className='max-w-2xl mx-auto mt-14 text-center'>
