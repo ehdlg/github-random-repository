@@ -1,12 +1,12 @@
 import { useCallback, useEffect, useState } from 'react';
 import { LOCAL_STORAGE_SIZE_LIMIT } from '../constants';
-import { LanguageValue, FullRepository } from '../types';
+import { LanguageValue, Repository } from '../types';
 
 function useLocalStorage(language: LanguageValue) {
-  const [cachedRepos, setCachedRepos] = useState<FullRepository[] | null>(null);
+  const [cachedRepos, setCachedRepos] = useState<Repository[] | null>(null);
   const [isCacheLoading, setIsCacheLoading] = useState<boolean>(true);
 
-  const updateCache = useCallback((language: string, repositories: FullRepository[] | null) => {
+  const updateCache = useCallback((language: string, repositories: Repository[] | null) => {
     setCachedRepos(repositories);
 
     if (null == repositories) return;
@@ -44,7 +44,7 @@ function useLocalStorage(language: LanguageValue) {
     if (null == language) return setIsCacheLoading(false);
 
     const initialRawValue: string | null = localStorage.getItem(language);
-    const initialValue: FullRepository[] | null =
+    const initialValue: Repository[] | null =
       null != initialRawValue ? JSON.parse(initialRawValue) : null;
 
     updateCache(language, initialValue);

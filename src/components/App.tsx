@@ -2,20 +2,20 @@ import useRepository from '../hooks/useRepository';
 import Search from './Search';
 import Loading from './Loading';
 import { useCallback, useEffect, useState } from 'react';
-import { LanguageValue, ProgrammingLanguageData, FullRepository } from '../types';
+import { LanguageValue, ProgrammingLanguageData, Repository } from '../types';
 import { SingleValue } from 'react-select';
 import { getRandomRepo } from '../utils';
 import RepoInfo from './RepoInfo';
 
 function App() {
   const [selectedLanguage, setSelectedLanguage] = useState<LanguageValue | null>(null);
-  const [randomRepo, setRandomRepo] = useState<FullRepository | null>(null);
+  const [randomRepo, setRandomRepo] = useState<Repository | null>(null);
   const { data, error, isLoading } = useRepository(selectedLanguage);
 
   const updateRandomRepo = useCallback(() => {
     if (null == data) return;
 
-    let newRandomRepo: FullRepository;
+    let newRandomRepo: Repository;
 
     do {
       newRandomRepo = getRandomRepo(data);
