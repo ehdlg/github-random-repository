@@ -2,6 +2,8 @@ export const API_URL = 'https://api.github.com/search';
 
 export const TOKEN = import.meta.env.VITE_TOKEN;
 
+export const REDIS_URL = import.meta.env.VITE_REDIS_URL;
+
 export const REPOSITORIES_PER_PAGE = 100;
 
 export const LOCAL_STORAGE_SIZE_LIMIT = 3.0;
