@@ -18,9 +18,7 @@ export const validateRepositoriesInput: RequestHandler = (req, res, next) => {
   if (null == repositories) throw new CustomError('No repositories were sent', 400);
 
   try {
-    const parsedRepos = JSON.parse(repositories);
-
-    if (Array.isArray(parsedRepos)) return next();
+    if (Array.isArray(repositories)) return next();
 
     throw new CustomError('Invalid repositories', 400);
   } catch {
