@@ -26,7 +26,7 @@ export default function RepoInfo({
     <>
       <article className='w-full bg-slate-100 shadow-md min-h-[350px] justify-between dark:bg-slate-800 rounded-xl  text-slate-800 dark:text-slate-200 p-8 flex flex-col gap-8 text-left text-lg'>
         <a href={html_url} target='_blank'>
-          <h3 className='text-3xl text-left from-slate-800 to-slate-800 dark:from-slate-200 dark:to-slate-200 hover:cursor-pointer bg-gradient-to-br hover:from-violet-300 hover:to-violet-400 inline-block text-transparent bg-clip-text transition ease-in duration-200'>
+          <h3 className='text-3xl p-1 text-left from-slate-800 to-slate-800 dark:from-slate-200 dark:to-slate-200 hover:cursor-pointer bg-gradient-to-br hover:from-violet-300 hover:to-violet-400 inline-block text-transparent bg-clip-text transition ease-in duration-200'>
             {name}
           </h3>
         </a>

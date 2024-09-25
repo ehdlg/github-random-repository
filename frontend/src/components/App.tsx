@@ -45,7 +45,7 @@ function App() {
 
   return (
     <main className='max-w-2xl mx-auto mt-14 text-center'>
-      <h2 className='text-7xl  font-bold text-center bg-gradient-to-br from-violet-300 to-violet-500 inline-block text-transparent bg-clip-text'>
+      <h2 className='text-7xl  p-4 font-bold text-center bg-gradient-to-br from-violet-300 to-violet-500 inline-block text-transparent bg-clip-text'>
         Random Repo
       </h2>
       <h3 className='dark:text-slate-300 text-2xl text-center leading-normal mt-8'>
