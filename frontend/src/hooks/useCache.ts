@@ -1,8 +1,8 @@
 import { LanguageValue } from '../types';
-import useLocalStorage from './useLocalStorage';
+import useRedis from './useRedis';
 
 function useCache(language: LanguageValue) {
-  const { cachedRepos, updateCache, isCacheLoading } = useLocalStorage(language);
+  const { cachedRepos, updateCache, isCacheLoading } = useRedis(language);
 
   return { cachedRepos, updateCache, isCacheLoading };
 }

@@ -20,7 +20,7 @@ function App() {
 
     do {
       newRandomRepo = getRandomRepo(data);
-    } while (randomRepo !== null && newRandomRepo.id === randomRepo.id);
+    } while (null != randomRepo && newRandomRepo.id === randomRepo.id);
 
     setRandomRepo(newRandomRepo);
   }, [data]);

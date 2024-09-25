@@ -1,9 +1,10 @@
 import useSWR from 'swr';
 import { API_URL, TOKEN, REPOSITORIES_PER_PAGE } from '../constants';
-import { ErrorResponse, LanguageValue, Repository, RepositorySearchResponse } from '../types';
+import { ErrorResponse, LanguageValue, RepositorySearchResponse } from '../types';
 import useCache from './useCache';
 import { extractRequiredFields } from '../utils';
 import { FetchError } from '../errors';
+import { useEffect } from 'react';
 
 const fetcher = async (url: string) => {
   const res = await fetch(url, {
@@ -20,7 +21,6 @@ const fetcher = async (url: string) => {
 };
 
 export function useRepository(language: LanguageValue) {
-  let filteredRepos: Repository[] | null = null;
   const URL = `${API_URL}/repositories?q=${
     language ? `language:${language}&` : ''
   }per_page=${REPOSITORIES_PER_PAGE}`;
@@ -31,13 +31,15 @@ export function useRepository(language: LanguageValue) {
     fetcher
   );
 
-  if (null != language && null != data) {
-    filteredRepos = extractRequiredFields(data.items);
+  useEffect(() => {
+    if (null != language && null != data) {
+      const filteredRepos = extractRequiredFields(data.items);
 
-    updateCache(language, filteredRepos);
-  }
+      updateCache(language, filteredRepos);
+    }
+  }, [language, data]);
 
-  return { data: cachedRepos || filteredRepos, error, isLoading: isCacheLoading || isLoading };
+  return { data: cachedRepos || data?.items, error, isLoading: isCacheLoading || isLoading };
 }
 
 export default useRepository;
