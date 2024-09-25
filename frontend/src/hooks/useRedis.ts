@@ -7,6 +7,8 @@ function useRedis(language: LanguageValue) {
   const [isCacheLoading, setIsCacheLoading] = useState<boolean>(true);
 
   const get = async (language: LanguageValue) => {
+    if (null == language) return setIsCacheLoading(false);
+
     const URL = `${REDIS_API}/${language}`;
     if (language == null) return;
 
