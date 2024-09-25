@@ -28,7 +28,7 @@ app.post('/', validateRepositoriesInput, async (req, res, next) => {
   const { language, repositories } = req.body;
 
   try {
-    await client.set(language, JSON.stringify(repositories));
+    await client.set(language, JSON.stringify(repositories), { EX: 60 * 60 * 24 }); //Expires in 24h
 
     return res.status(201).json('OK');
   } catch (error) {
