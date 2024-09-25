@@ -1,13 +1,13 @@
 import { useState, useEffect } from 'react';
 import { LanguageValue, Repository } from '../types';
-import { REDIS_URL } from '../constants';
+import { REDIS_API } from '../constants';
 
 function useRedis(language: LanguageValue) {
   const [cachedRepos, setCachedRepos] = useState<Repository[] | null>(null);
   const [isCacheLoading, setIsCacheLoading] = useState<boolean>(true);
 
   const get = async (language: LanguageValue) => {
-    const URL = `${REDIS_URL}/${language}`;
+    const URL = `${REDIS_API}/${language}`;
     if (language == null) return;
 
     const response = await fetch(URL);
@@ -21,7 +21,7 @@ function useRedis(language: LanguageValue) {
   };
 
   const set = async (language: LanguageValue, repositories: Repository[]) => {
-    const URL = REDIS_URL;
+    const URL = REDIS_API;
     const body = { language, repositories };
 
     await fetch(URL, {
