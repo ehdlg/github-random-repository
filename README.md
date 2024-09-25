@@ -6,7 +6,7 @@ This project is based on the [roadmap.sh GitHub random repository project](https
 
 ## Live Preview
 
-You can view a live preview of the project [here](https://github-random-repository.vercel.app/)
+You can view a live preview of the project [here](https://github-random-repository.vercel.app/). Note that the live version currently uses localStorage for caching due to hosting limitations.
 
 ## Objectives
 
@@ -19,6 +19,7 @@ The main goals of this project were to refresh my knowledge fetching data from e
 - Display the repository name, description, stars, forks, and open issues.
 - Handle loading and error states.
 - Allow users to fetch another random repository with a "Refresh" button.
+- Caching: Now supports both `localStorage` and `Redis` for caching repository data.
 
 ## Problem Solved: API Request Limit
 
@@ -26,11 +27,12 @@ During the development of this app, I encountered GitHub API's Search short rate
 
 ### Solution: Caching with a Custom Hook
 
-To address this, I prioritized implementing a custom React hook that caches repository data after the first API request. Instead of fetching a new repository on each button click, the app fetches a larger set of repositories initially and stores them in cache (using `localStorage` for now). This approach checks if there are cached repositoies for the selected programming language; if they exist, the app retrieves them from cache rather than making an additional API call. This allows the "Refresh" functionality to work almost instantly, whether for the same language or when switching to other languages.
+To address this, I implemented a custom React hook that caches repository data after the first API request. The app fetches a larger set of repositories initially and stores them in cache. Depending on the configuration, it uses either localStorage or Redis.
 
 - **First Load**: The app fetches multiple repositories at once for the selected programming language and caches them in the browser's `localStorage`.
 - **Subsequent Loads**: When the user clicks "Refresh" or switches to another language the app checks and pulls the next repository from the cache rather than hitting the API again.
-- **Future Plans**: I plan to implement a more robust caching system using Redis, as `localStorage` has size limitations, which was another challenge I faced during development.
+- **Backend Implementation**: A backend has been implemented using Node.js and TypeScript to manage caching with Redis. However, due to hosting limitations, the live preview utilizes localStorage.
+- **Testing Redis:** To test the Redis implementation, clone the repository and configure the .env file to use Redis either locally or with Redis Cloud.
 
 ## Technologies Used
 
@@ -40,3 +42,4 @@ To address this, I prioritized implementing a custom React hook that caches repo
 - **localStorage**: To cache repository data and reduce the number of API calls.
 - **React-Select**: For the language dropdown component.
 - **SWR**: For data fetching.
+- **Redis**: For data caching.
