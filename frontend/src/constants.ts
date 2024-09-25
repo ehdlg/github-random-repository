@@ -4,6 +4,8 @@ export const TOKEN = import.meta.env.VITE_TOKEN;
 
 export const REDIS_API = import.meta.env.VITE_REDIS_API;
 
+export const USE_REDIS = import.meta.env.VITE_USE_REDIS;
+
 export const REPOSITORIES_PER_PAGE = 100;
 
 export const LOCAL_STORAGE_SIZE_LIMIT = 3.0;
