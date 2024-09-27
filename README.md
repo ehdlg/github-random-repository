@@ -31,11 +31,12 @@ To address this, I implemented a custom React hook that caches repository data a
 
 - **First Load**: The app fetches multiple repositories at once for the selected programming language and caches them in the browser's `localStorage`.
 - **Subsequent Loads**: When the user clicks "Refresh" or switches to another language the app checks and pulls the next repository from the cache rather than hitting the API again.
-- **Backend Implementation**: A backend has been implemented using Node.js and TypeScript to manage caching with Redis. However, due to hosting limitations, the live preview utilizes localStorage.
+- **Backend Implementation**: A backend has been implemented using Node.js and TypeScript to manage caching with Redis. However, due to hosting limitations, the live preview utilizes localStorage. Additionally, I have created a backend using Python and Flask. Due to the simplicity of the backend, I saw it as a great opportunity to practice
 - **Testing Redis:** To test the Redis implementation, clone the repository and configure the .env file to use Redis either locally or with Redis Cloud.
 
 ## Technologies Used
 
+- **TypeScript**: Main language used for the React frontend and Node backend
 - **React**: For building the user interface and managing state.
 - **Tailwind**: For styling.
 - **GitHub Repository Search API**: To fetch repositories based on the selected language.
@@ -43,3 +44,4 @@ To address this, I implemented a custom React hook that caches repository data a
 - **React-Select**: For the language dropdown component.
 - **SWR**: For data fetching.
 - **Redis**: For data caching.
+- **Python and Flask**: For implementing an alternative backend.
